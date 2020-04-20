@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;0,400;1,200;1,400&display=swap');
+*,
+*::after,
+*::before { 
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Muli;
+}
+
+body {
+    font-size: 1.6rem;
+}
+body:before {
+    content: ' ';
+    background-image: url("img/ian-schneider-TamMbr4okv4-unsplash.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: fixed;
+    opacity: 0.15;
+}
+
+#page-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#content-wrap {
+    padding-bottom: 24rem; /* height of footer */
+    flex: 1 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: raleway;
+}
+
+header {
+    background-color: #0D0221;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 5em;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    transition: all 1.3s; 
+}
+
+.sticky + .page {
+    padding-top: 102px;
+}
+
+header a.first {
+    margin-left: auto;
+}
+
+header a.logo {
+    margin-left: 1em;
+}
+
+header a.menu-header {
+    margin-right: 1em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+img.rounded {
+    border-radius: 100%;
+    width: 25%;
+}
+
+.container-box img.rounded {
+    margin: 2.5rem 0 0 2rem;
+}
+
+.img-container {
+    background-image: linear-gradient(to right, #B1F4E778 10%, #12D3CF87), url("img/erol-ahmed-aIYFR0vbADk-unsplash.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.styled-heading {
+    color: white;
+    font-family: 'Raleway';
+    text-transform: uppercase;
+    font-size: 5rem;
+    letter-spacing: 1.2rem;
+}
+
+#white-section {
+    
+}
+
+section h1, section p {
+    text-align: center;
+}
+
+header.special {
+    background-color: white;
+}
+
+section h1 {
+    margin-top: 5em;
+}
+
+section p, section ul {
+    margin: 2em 0 3em 0;
+}
+
+#white-section {
+    padding-bottom: 6rem;
+}
+
+div.content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 66%;
+    margin: 0 auto;
+}
+
+div.container-box {
+    flex: 0 0 30%;
+    margin: 0 1em 1em 0;
+    border-radius: 2px;
+}
+
+div.container-box.blue {
+    background: linear-gradient(-213deg, #B1F4E7 44%, #FFF 28%);
+    box-shadow: 2px 2px 5px #0D0221;    
+    color: #0D0221;
+}
+
+div.container-box.white {
+    background: white;
+    padding-bottom: 2rem;
+}
+
+div.container-box i {
+    display:table;
+    margin: 2rem auto;
+}
+
+div.container-box h2 {
+    text-align: center;
+}
+
+.third-section {
+    background-image: linear-gradient(to right, #B1F4E7D1 10%, #12D3CFD1), url("img/joanne-gerber-H2mOe5rnUaA-unsplash.jpg");    background-attachment: fixed;
+    background-position: center;
+	padding: 6rem 0 8rem 0;
+    color: white;
+}
+
+.third-section h2.styled-heading {
+    text-align: center;
+    font-size: 4rem;
+}
+.third-section p {
+    font-weight: 300;
+}
+
+div.inner {
+    width: 66%;
+    margin: 0 auto;
+}
+
+.testimonial-section {
+    margin-bottom: 5rem;
+}
+
+blockquote {
+	margin: 1em 2em 0 2em;
+	font-weight: 200;
+	font-style: italic;
+	border-left: solid 0.5rem;
+	border-left-color: rgba(0, 0, 0, 0.25);
+	padding-left: 2rem;
+}
+
+p.credit {
+	display: inline;
+	position: relative;
+    bottom: 3rem;
+    font-size: 1.2rem;
+}
+
+p.credit strong {
+    color: #12D3CF; 
+}
+
+footer {
+    flex-shrink: 0;
+	width: 100%;
+    padding: 8rem 0 6rem 0;
+    margin-top: 1rem;
+    background: #111;
+    color: white;
+    font-weight: 200;
+}
+
+footer div.content {
+    border-bottom: .1rem solid rgba(255, 255, 255, 0.2);
+}
+
+footer h3, footer h4 {
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+footer p, footer li, footer i {
+    color: rgb(255,255,255, .5);
+}
+
+footer p {
+    text-align: left;
+}
+
+footer .content section:nth-child(1) {
+    width: 45%;
+    margin-right: 5%;
+}
+
+footer .content section:nth-child(1n+2) {
+    width: 20%;
+    margin-right: 5%;
+}
+
+section#follow i::before {
+    margin-right: 1em;
+}
+
+footer p#copyright {
+	text-align: center;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+}
